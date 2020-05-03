@@ -32,10 +32,13 @@ public class Ship : MonoBehaviourPun
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (photonView.IsMine&&collision.tag == "Cannon")
+        if (collision.tag == "Cannon")
         {
             Destroy(collision.gameObject);
-            gameController.shipHealth -= gameController.fireType == GameController.FireType.Front ? 15 : 7.5f;
+            if (photonView.IsMine)
+            {
+                gameController.shipHealth -= gameController.fireType == GameController.FireType.Front ? 15 : 7.5f;
+            }
         }
     }
 

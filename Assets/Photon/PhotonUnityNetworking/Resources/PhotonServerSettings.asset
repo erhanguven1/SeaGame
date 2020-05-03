@@ -35,6 +35,7 @@ MonoBehaviour:
   - DestroyRpc
   - Change
   - Changex
+  - DestroyCannonBall
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

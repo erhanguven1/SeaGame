@@ -23,9 +23,6 @@ ScriptsOnlyBuild:
     - NaughtyWaterBuoyancy.FloatingObject
     - NaughtyWaterBuoyancy.WaterVolume
     - WaterWaves
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PhotonRigidbodyViewEditor
-    - Photon.Pun.PhotonViewInspector
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonRigidbodyView
     - Photon.Pun.PhotonView
