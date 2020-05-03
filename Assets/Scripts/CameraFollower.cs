@@ -10,7 +10,12 @@ public class CameraFollower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!GetComponentInParent<Photon.Pun.PhotonView>().IsMine)
+        {
+            Destroy(gameObject);
+        }
+        else
+            transform.parent = null;
     }
 
     // Update is called once per frame

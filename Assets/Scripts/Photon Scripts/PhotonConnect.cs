@@ -40,5 +40,9 @@ public class PhotonConnect : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         print("joined room!");
+
+        //spawn ship
+        GameObject ship = PhotonNetwork.Instantiate("Ship", Vector3.up*15+10*Vector3.forward*(PhotonNetwork.CurrentRoom.PlayerCount), Quaternion.identity, 0);
+        
     }
 }

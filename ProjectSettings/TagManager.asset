@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Ship
   - Water Volume
-  - cannon
+  - Cannon
   layers:
   - Default
   - TransparentFX
